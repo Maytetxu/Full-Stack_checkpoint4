@@ -57,5 +57,6 @@ print (codigo_producto)
 cliente = ("name", "adress", "cif_empresa")
 print(id(cliente)) #ID=4505861888
 cliente = cliente + ("contacto",)
+cliente += ("contacto",)
 print (cliente)
 print(id(cliente)) #ID=4506161840

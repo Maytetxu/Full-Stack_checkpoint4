@@ -11,6 +11,9 @@ productos = {                                    #dictionary
 coste_envio = 4
 comision_envio = 0.05 #float
 cantidad_envios = 16  #integer
+coste_envio = Decimal (4)
+comision_envio = Decimal(0.05)
+cantidad_envios = Decimal(16)
 total_comision = ((coste_envio * comision_envio) * (cantidad_envios))
 print (total_comision) #3.2 decimal
 
@@ -52,5 +55,7 @@ print (codigo_producto)
 
 #Ejercicio 9: Usar reasignamiento a tupla
 cliente = ("name", "adress", "cif_empresa")
+print(id(cliente)) #ID=4505861888
 cliente = cliente + ("contacto",)
 print (cliente)
+print(id(cliente)) #ID=4506161840
